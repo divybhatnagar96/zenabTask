@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>To Do list</h2>
+
+<table style="width:100%; text-align:center; outline:2px solid black">
+  <tr>
+    <th>To Do</th>
+    <th>In progress</th> 
+    <th>Done</th>
+  </tr>
+  <tr id="Todorow1">
+    <td>
+    <table style="width:100%; text-align:center ;">
+       <tr id = 'TodoCard1'>
+        <th>Call Boss</th>
+           <th><button onclick = "Movecard1toInProgress()" id="ToDoDone">Move Task 1 to In progress </button></th>
+       </tr>
+   </table>
+    </td>
+
+    <td>
+    <table id = "In progress 1" style="width:100%; text-align:center ;visibility: hidden;">
+       <tr >
+        <th>Call Boss</th>
+           <th><button onclick="Movecard1toDone()" id="InProgressDone1">Move Task 1 to Done</button></th>
+       </tr>
+   </table>
+    </td>
+<td>
+    <table style="width:100%; text-align:center ;visibility: hidden;">
+       <tr id = 'Done1'>
+        <th>Call Boss</th>            
+       </tr>
+   </table>
+    </td>
+  </tr>
+  
+
+
+
+<tr id="Todorow2">
+    <td>
+    <table style="width:100%; text-align:center ;">
+       <tr id = 'TodoCard2'>
+        <th>Get Groceries</th>
+           <th><button  onclick = "Movecard2toInProgress()" id="ToDoDone2">Move Task 2 to In progress </button></th>
+       </tr>
+   </table>
+    </td>
+
+    <td>
+    <table id = "In progress 2" style="width:100%; text-align:center ;o;visibility: hidden;">
+       <tr >
+        <th>Get Groceries</th>
+           <th><button onclick="Movecard2toDone()" id="InProgressDone">Move Task 2 to Done</button></th>
+       </tr>
+   </table>
+    </td>
+<td>
+    <table style="width:100%; text-align:center ;visibility: hidden;">
+       <tr id = 'Done2'>
+        <th>Get Groceries</th>            
+       </tr>
+   </table>
+    </td>
+  </tr>
+  
+  
+  
+  
+  <tr id="Todorow3">
+    <td>
+    <table style="width:100%; text-align:center ;">
+       <tr id = 'TodoCard3'>
+        <th>Renew Car Insurance</th>
+           <th><button onclick = "Movecard3toInProgress()"  id="ToDoDone2">Move Task 3 to In progress </button></th>
+       </tr>
+   </table>
+    </td>
+
+    <td>
+    <table id = "In progress 3" style="width:100%; text-align:center;visibility: hidden;">
+       <tr >
+        <th>Renew Car Insurance</th>
+           <th><button onclick="Movecard3toDone()" id="InProgressDone">Move Task 3 to Done</button></th>
+       </tr>
+   </table>
+    </td>
+<td>
+    <table style="width:100%; text-align:center ;visibility: hidden;">
+       <tr id = 'Done3'>
+        <th>Renew Car Insurance</th>            
+       </tr>
+   </table>
+    </td>
+  </tr>
+  
+
+
+  
+  <tr id="Todorow4">
+    <td>
+    <table style="width:100%; text-align:center ;">
+       <tr id = 'TodoCard4'>
+        <th>Visit Bank</th>
+           <th><button  onclick = "Movecard4toInProgress()" id="ToDoDone2">Move Task 4 to In progress </button></th>
+       </tr>
+   </table>
+    </td>
+
+    <td>
+    <table id = "In progress 4" style="width:100%; text-align:center ;visibility: hidden;">
+       <tr >
+        <th>Visit Bank </th>
+           <th><button onclick="Movecard4toDone()" id="InProgressDone">Move Task 4 to Done</button></th>
+       </tr>
+   </table>
+    </td>
+<td>
+    <table style="width:100%; text-align:center ;visibility: hidden;">
+       <tr id = 'Done 4'>
+        <th>Visit Bank</th>            
+       </tr>
+   </table>
+    </td>
+  </tr>
+  
+
+
+  
+</table>
+
+
+
+<script>
+        function Movecard1toInProgress() {
+        console.log("Hello world!");
+            var x = document.getElementById("In progress 1");
+            x.style.visibility = "visible";
+            var y = document.getElementById("TodoCard1");
+            y.style.visibility = "hidden";
+        
+   }        
+      function Movecard2toInProgress() {
+        console.log("Hello world!");
+            var x = document.getElementById("In progress 2");
+            x.style.visibility = "visible";
+            var y = document.getElementById("TodoCard2");
+            y.style.visibility = "hidden";
+        
+   }     
+      function Movecard3toInProgress() {
+        console.log("Hello world!");
+            var x = document.getElementById("In progress 3");
+            x.style.visibility = "visible";
+            var y = document.getElementById("TodoCard3");
+            y.style.visibility = "hidden";
+        
+   }
+      function Movecard4toInProgress() {
+        console.log("Hello world!");
+            var x = document.getElementById("In progress 4");
+            x.style.visibility = "visible";
+            var y = document.getElementById("TodoCard4");
+            y.style.visibility = "hidden";
+        
+   }       
+      
+      
+      
+      
+      function Movecard1toDone() {
+        console.log("done1");
+            var x = document.getElementById("In progress 1");
+            x.style.visibility = "hidden";
+            var y = document.getElementById("Done1");
+            y.style.visibility = "visible";
+        
+   }   
+         function Movecard2toDone() {
+        console.log("done1");
+            var x = document.getElementById("In progress 2");
+            x.style.visibility = "hidden";
+            var y = document.getElementById("Done2");
+            y.style.visibility = "visible";
+        
+   }  
+         function Movecard3toDone() {
+        console.log("done1");
+            var x = document.getElementById("In progress 3");
+            x.style.visibility = "hidden";
+            var y = document.getElementById("Done3");
+            y.style.visibility = "visible";
+        
+   }     function Movecard4toDone() {
+        console.log("done1");
+            var x = document.getElementById("In progress 4");
+            x.style.visibility = "hidden";
+            var y = document.getElementById("Done 4");
+            y.style.visibility = "visible";
+        
+   }  
+      
+      
+      
+
+
+
+
+
+      
+      
+      
+
+    </script> 
+
+
+
+
+</body>
+</html>
